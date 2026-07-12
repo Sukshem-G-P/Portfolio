@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #ffffff;
+  --surface: #f8f9fb;
+  --primary: #2563eb;
+  --primary-rgb: 37, 99, 235;
+  --text: #111827;
+  --text-secondary: #6b7280;
+  --border: #e5e7eb;
+  --success: #16a34a;
+}
+
+.dark {
+  --bg: #0b0f19;
+  --surface: #121826;
+  --primary: #4f8cff;
+  --primary-rgb: 79, 140, 255;
+  --text: #f9fafb;
+  --text-secondary: #a0aec0;
+  --border: #273043;
+  --success: #34d399;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+@layer components {
+  .icon-btn {
+    @apply w-9 h-9 rounded-full border border-border text-text-secondary items-center justify-center transition-all duration-200;
+  }
+  .icon-btn:hover {
+    @apply text-primary border-primary -translate-y-0.5;
+  }
+  .btn-primary {
+    @apply inline-flex items-center gap-2 text-base font-semibold px-5 py-3 rounded-md bg-primary text-white transition-all duration-200;
+  }
+  .btn-primary:hover {
+    @apply -translate-y-0.5;
+    box-shadow: 0 0 24px rgba(var(--primary-rgb), 0.45);
+  }
+  .btn-ghost {
+    @apply inline-flex items-center gap-2 text-base font-semibold px-5 py-3 rounded-md bg-transparent text-text border border-border transition-all duration-200;
+  }
+  .btn-ghost:hover {
+    @apply text-primary border-primary -translate-y-0.5;
+  }
+  .eyebrow {
+    @apply font-mono text-sm font-medium text-primary uppercase tracking-wider flex items-center gap-2 mb-3;
+  }
+  .eyebrow::before {
+    content: "<";
+  }
+  .eyebrow::after {
+    content: "/>";
+  }
+}

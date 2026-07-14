@@ -13,6 +13,7 @@ export const siteConfig = {
   keywords: [
     "Sukshem G P",
     "Sukshem",
+    "FareFirst developer",
     "FareFirst web developer",
     "Full Stack Developer portfolio",
     "React developer Mangaluru",
@@ -21,10 +22,10 @@ export const siteConfig = {
     "Sukshem portfolio",
   ],
   social: {
-    github: "https://github.com/sukshemgp",
-    linkedin: "https://linkedin.com/in/sukshemgp",
-    leetcode: "https://leetcode.com/sukshemgp",
-    gfg: "https://www.geeksforgeeks.org/user/sukshemgp",
+    github: "https://github.com/Sukshem-G-P",
+    linkedin: "https://www.linkedin.com/in/sukshem/",
+    leetcode: "https://leetcode.com/u/Sukshem_G_P/",
+    gfg: "http://geeksforgeeks.org/profile/sukshem",
     email: "sukshemgp@gmail.com",
     phone: "+91-9844218989",
   },

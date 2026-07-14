@@ -1,8 +1,8 @@
 export const stats = [
   { value: "1+", label: "Years Exp." },
   { value: "3", label: "Projects" },
-  { value: "350+", label: "LeetCode" },
-  { value: "20+", label: "Repositories" },
+  { value: "75+", label: "LeetCode" },
+  { value: "5+", label: "Repositories" },
   { value: "8.75", label: "CGPA" },
   { value: "FareFirst", label: "Current Co." },
 ];
